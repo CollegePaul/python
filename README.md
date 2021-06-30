@@ -10,10 +10,11 @@ This project demonstrates a simple interface with **tkinter**
  
 Have fun 
 
-### :clipboard: To Do
+### :clipboard: To DoS
 
 - [x] GUI
 - [ ] Math plots
 - [ ] Classes
 - [ ] User input
+- [ ] f-strings
 
