@@ -17,4 +17,5 @@ Have fun
 - [ ] Classes
 - [ ] User input
 - [ ] f-strings
+- [x] protected properties
 
