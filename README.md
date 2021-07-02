@@ -27,4 +27,4 @@ Have a go a unit testing. Test runner and configuatation set up folder .vscode n
 - [x] Private properties
 - [x] Juypeter notebook
 - [x] Unit testing
-- [ ] Code force setup
+- [x] Code force setup - See tests folder (watermellon)
