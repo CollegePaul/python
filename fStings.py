@@ -11,6 +11,6 @@ print (f"{2 * 5}")
 #rmove capitals
 print(f"{name.lower()} is my name with no captials.")
 
-#use to fix decimal places - output 10.13
+#use to fix decimal places - outputs £10.13
 d= 10.1294
 print( f'£{d:.2f}' )
