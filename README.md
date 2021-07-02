@@ -10,7 +10,7 @@ This project demonstrates a simple interface with **tkinter**
  
 Have fun 
 
-### :microscope: Testing
+### :test_tube: Testing
 
 Have a go a unit testing. Test runner and configuatation set up folder .vscode now included.
 
@@ -25,6 +25,6 @@ Have a go a unit testing. Test runner and configuatation set up folder .vscode n
 - [x] Abstract classes
 - [x] Overriding base method
 - [x] Private properties
-- [ ] Juypeter notebook
+- [x] Juypeter notebook
 - [x] Unit testing
 - [ ] Code force setup
