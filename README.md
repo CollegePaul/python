@@ -16,6 +16,9 @@ Have fun
 - [ ] Math plots
 - [ ] Classes
 - [ ] User input
-- [ ] f-strings
-- [x] protected properties
+- [x] f-strings
+- [x] Protected properties
+- [x] Abstract classes
+- [x] Overriding base method
+- [x] Private properties
 
