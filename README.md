@@ -10,6 +10,10 @@ This project demonstrates a simple interface with **tkinter**
  
 Have fun 
 
+### :microscope: Testing
+
+Have a go a unit testing. Test runner and configuatation set up folder .vscode now included.
+
 ### :clipboard: To DoS
 
 - [x] GUI
@@ -21,4 +25,6 @@ Have fun
 - [x] Abstract classes
 - [x] Overriding base method
 - [x] Private properties
-
+- [ ] Juypeter notebook
+- [x] Unit testing
+- [ ] Code force setup
