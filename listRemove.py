@@ -41,7 +41,7 @@ Solution 1
 
 """
 There is a better way
-Why is this different?
+Why is this different ?
 """
 
 # for item in list:
