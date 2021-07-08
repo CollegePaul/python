@@ -1,0 +1,10 @@
+1:	Minecraft
+2:	Grand Theft Auto V
+3:	Tetris
+4:	Wii Sports
+5:	PlayerUnknown's Battleground
+6:	Super Mario Bros.
+7:	Pokémon
+8:	Mario Kart 8
+9:	Wii Fit
+10:	Tetris

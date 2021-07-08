@@ -14,12 +14,16 @@ Have fun
 
 Have a go a unit testing. Test runner and configuatation set up folder .vscode now included.
 
+### Documentation
+
+Have a go with sphinx and generate documentation with docstings
+
 ### :clipboard: To DoS
 
 - [x] GUI
 - [ ] Math plots
 - [ ] Classes
-- [ ] User input
+- [x] User input
 - [x] f-strings
 - [x] Protected properties
 - [x] Abstract classes
@@ -28,3 +32,14 @@ Have a go a unit testing. Test runner and configuatation set up folder .vscode n
 - [x] Juypeter notebook
 - [x] Unit testing
 - [x] Code force setup - See tests folder (watermellon)
+- [x] Basic documentation generation (sphinx)
+- [x] Fizzbus examples
+- [x] File saveing and loading (line by line)
+- [x] Remove items from a list
+- [ ] orgnise into folders by topic
+- [ ] lambdas
+- [ ] map
+- [ ] List of vsCode extenstions
+
+In VScode to see this markdown CTRL+SHIFT+V
+(github markdown installed for best effect, with emoji and check boxes)

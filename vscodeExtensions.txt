@@ -1,0 +1,31 @@
+Bracket Pair Colorizer
+
+Beautify
+
+C/C++
+
+Coder runner
+
+Colour Picker
+
+ESLint
+
+Jupyter
+
+Live server
+
+Markdown Preview, Emoji, Checkbox
+
+Material Icon theme
+
+One dark progress
+
+PHP intelisense
+
+Plant UML
+
+Pylance
+
+PythonIcon
+
+TabNine
