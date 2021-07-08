@@ -1,0 +1,1 @@
+'''Inputing information via the console.'''
