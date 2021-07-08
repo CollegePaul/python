@@ -1,0 +1,6 @@
+venv/
+docs/_build/
+docs/_static/
+docs/_templates/
+docs/codefiles/__pycache__
+
