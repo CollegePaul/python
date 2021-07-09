@@ -9,3 +9,4 @@ def area(length: float,width: float) -> float:
     """Returns area of a rectangle Length x Witdth"""
     return length * width
 
+

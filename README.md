@@ -42,7 +42,7 @@ Have a go with sphinx and generate documentation with docstings
 - [x] List of vsCode extenstions
 - [ ] database, sql
 - [ ] website
-- [ ] web sraping
+- [ ] web scraping
 - [ ] google sheets
 - [ ] List comprehension
 
