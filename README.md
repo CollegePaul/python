@@ -39,7 +39,12 @@ Have a go with sphinx and generate documentation with docstings
 - [ ] orgnise into folders by topic
 - [ ] lambdas
 - [ ] map
-- [ ] List of vsCode extenstions
+- [x] List of vsCode extenstions
+- [ ] database, sql
+- [ ] website
+- [ ] web sraping
+- [ ] google sheets
+- [ ] List comprehension
 
 In VScode to see this markdown CTRL+SHIFT+V
 (github markdown installed for best effect, with emoji and check boxes)
