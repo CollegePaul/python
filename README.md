@@ -12,7 +12,7 @@ Have fun
 
 ### :test_tube: Testing
 
-Have a go a unit testing. Test runner and configuatation set up folder .vscode now included.
+Have a go at unit testing. Test runner and configuatation set up folder .vscode now included.
 
 ### Documentation
 
@@ -21,33 +21,36 @@ Have a go with sphinx and generate documentation with docstings
 ### :clipboard: To DoS
 
 - [x] GUI
-- [ ] Math plots
-- [ ] Classes
+    - [x] Burger GUI
+- [x] Classes
     - [x] Base
-    - [x] abstract
+    - [x] Abstract Classes
     - [x] Inheritence
+    - [x] Protected properties
+    - [x] Overriding base method
+    - [x] Private properties
 - [x] User input
 - [x] f-strings
-- [x] Protected properties
-- [x] Abstract classes
-- [x] Overriding base method
-- [x] Private properties
 - [x] Juypeter notebook
+    - [x] Basic Notebook use
+    - [x] Numpy
+    - [x] Lambda functions
+    - [x] Map
 - [x] Unit testing
 - [x] Code force setup - See tests folder (watermellon)
 - [x] Basic documentation generation (sphinx)
 - [x] Fizzbus examples
 - [x] File saveing and loading (line by line)
 - [x] Remove items from a list
-- [ ] orgnise into folders by topic
-- [x] lambdas
-- [x] map
-- [x] List of vsCode extenstions
+- [x] List of vsCode extenstions .md
 - [ ] database, sql
 - [ ] website
 - [x] web scraping
 - [ ] List comprehension
 - [x] Error Handling
+- [x] Sockets
+    - [x] Client
+    - [x] Server
 
 In VScode to see this markdown CTRL+SHIFT+V
 (github markdown installed for best effect, with emoji and check boxes)
