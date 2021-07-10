@@ -23,6 +23,9 @@ Have a go with sphinx and generate documentation with docstings
 - [x] GUI
 - [ ] Math plots
 - [ ] Classes
+    - [x] Base
+    - [x] abstract
+    - [x] Inheritence
 - [x] User input
 - [x] f-strings
 - [x] Protected properties
@@ -37,14 +40,14 @@ Have a go with sphinx and generate documentation with docstings
 - [x] File saveing and loading (line by line)
 - [x] Remove items from a list
 - [ ] orgnise into folders by topic
-- [ ] lambdas
-- [ ] map
+- [x] lambdas
+- [x] map
 - [x] List of vsCode extenstions
 - [ ] database, sql
 - [ ] website
-- [ ] web scraping
-- [ ] google sheets
+- [x] web scraping
 - [ ] List comprehension
+- [x] Error Handling
 
 In VScode to see this markdown CTRL+SHIFT+V
 (github markdown installed for best effect, with emoji and check boxes)
