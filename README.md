@@ -43,7 +43,7 @@ Have a go with sphinx and generate documentation with docstings
 - [x] File saveing and loading (line by line)
 - [x] Remove items from a list
 - [x] List of vsCode extenstions .md
-- [ ] database, sql
+- [x] database (see sql folder)
 - [ ] website
 - [x] web scraping
 - [ ] List comprehension
@@ -51,6 +51,11 @@ Have a go with sphinx and generate documentation with docstings
 - [x] Sockets
     - [x] Client
     - [x] Server
+- [x] Lessons
+    - [ ] Level 2
+    - [ ] Level 3
+    - [ ] Level 3 OOP
+-[ ] Generators
 
 In VScode to see this markdown CTRL+SHIFT+V
 (github markdown installed for best effect, with emoji and check boxes)
