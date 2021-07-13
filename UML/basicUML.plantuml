@@ -1,0 +1,25 @@
+@startuml Animals
+skinparam groupInheritance 2
+
+Class Animal {
+ -type
+ -sound
+ +speak()
+}
+
+
+Class Dog {
+ -owener
+ +walkies()
+}
+
+Class Bird {
+ -nest
+ +fly()
+}
+
+
+Animal <|-- Dog
+Animal <|-- Bird
+
+@enduml
