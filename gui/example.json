@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -1.124,
+        "lat": 53.3018
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 290.94,
+        "feels_like": 290.76,
+        "temp_min": 287.92,
+        "temp_max": 292.79,
+        "pressure": 1019,
+        "humidity": 76
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.24,
+        "deg": 338,
+        "gust": 6.71
+    },
+    "clouds": {
+        "all": 2
+    },
+    "dt": 1626250822,
+    "sys": {
+        "type": 2,
+        "id": 2007943,
+        "country": "GB",
+        "sunrise": 1626234859,
+        "sunset": 1626294359
+    },
+    "timezone": 3600,
+    "id": 2633551,
+    "name": "Worksop",
+    "cod": 200
+}
