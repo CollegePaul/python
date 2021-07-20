@@ -22,12 +22,26 @@ def create_table(db_name,table_name,sql):
             cursor.execute(sql)
             db.commit()
 
-
-if __name__ == "__main__":
-    db_name = "coffee_shop.db"
+def create_product_table():
     sql = """CREATE TABLE Product
              (ProductID integer,
              Name text,
              Price real,
-             Primary Key(ProductID));"""
+             ProductTypeID integer,
+             primary key(ProductID),
+             foreign key(ProductTypeID) references ProductType(ProductTypeID))"""
     create_table(db_name,"Product",sql)
+
+def create_product_type_table():
+    sql = """create table ProductType
+             (ProductTypeID integer,
+             Description text,
+             primary key(ProductTypeID))"""
+    create_table(db_name, "ProductType",sql)
+
+
+if __name__ == "__main__":
+    db_name = "coffee_shop.db"
+    create_product_table()
+    create_product_type_table()
+    
