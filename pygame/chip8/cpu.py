@@ -19,9 +19,18 @@ class Cpu:
     FRAME_BUFFER_WIDTH = 64
     FRAME_BUFFER_HEIGHT = 32
 
-    def _init_(self):
+    def __init__(self):
         # 4k of RAM
         self.ram = [0] * 4096
         self.program_counter = self.PROGRAM_START_ADDRESS
         self.index_register = 0
         self.general_purpose_registers = [0] * 16
+        self.delay_timer = 0
+        self.stack = []
+        self.stack_pointer = 0
+        self.keys = set()
+        self.frame_buffer = [[bool()] * 32 for i in range(64)]
+        self._load_font()
+        self._current_word = 0
+        self._current_operation = None
+
