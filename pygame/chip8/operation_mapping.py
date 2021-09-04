@@ -76,4 +76,23 @@ def find_operation(word):
     if opcode.a == 0xF:
         if opcode.nn == 0x07:
             return operations.set_x_to_delay_timer
+        if opcode.nn == 0xA:
+            return operations.wait_for_key_press
+        if opcode.nn == 0x15:
+            return operations.set_delay_timer
+        if opcode.nn == 0x18:
+            return operations.set_sound_timer
+        if opcode.nn == 0x1E:
+            return operations.add_x_to_i
+        if opcode.nn == 0x29:
+            return operations.load_character_address
+        if opcode.nn == 0x33:
+            return operations.save_x_as_bcd
+        if opcode.nn == 0x55:
+            return operations.save_registers_zero_to_x
+        if opcode.nn == 0x65:
+            return operations.load_registers_zero_to_x
+    
+    raise KeyError(f"Opcode {word:#06x} not preseent in list of valid operations")
 
+  
