@@ -1,0 +1,1 @@
+#impliment ohms law
