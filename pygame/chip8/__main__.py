@@ -20,7 +20,7 @@ if __name__ == "__main__":
     rom_bytes = rom_loader.get_rom_bytes(args.rom)
     cpu.load_rom(rom_bytes)
      
-    pygame.deisplay.set_caption("pychip8")
+    pygame.display.set_caption("pychip8")
     pygame.init()
 
     #main looop

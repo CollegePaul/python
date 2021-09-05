@@ -24,6 +24,6 @@ def render(frame_buffer):
                 pygame.draw.rect(
                     screen, 
                     WHITE, 
-                    (x * SCALE,  * SCALE, SCALE, SCALE))
+                    (x * SCALE, y * SCALE, SCALE, SCALE))
     
     pygame.display.update()
