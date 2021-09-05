@@ -20,7 +20,7 @@ def render(frame_buffer):
 
     for x in range(64):
         for y in range(32):
-            if frame_buffer[X][Y]:
+            if frame_buffer[x][y]:
                 pygame.draw.rect(
                     screen, 
                     WHITE, 
