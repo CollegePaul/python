@@ -2,6 +2,7 @@
 This module will handel keyboard logic
 """
 
+from _typeshed import SupportsKeysAndGetItem
 import sys
 import pygame
 
@@ -30,4 +31,19 @@ def handel_input(cpu=None):
 
     for event in pygame.event.get():
         #quit if user presses exit or closes the window.
-        pass
+        if event.type == pygame.QUIT:
+            sys.exit()
+        
+        #check cpu registers and inject key input
+        if cpu:
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    sys.exit()
+                if event.key in keys:
+                    cpu.key_down(keys[event.key])
+            
+            if event.type == pygame.KEYUP:
+                if event.key in keys:
+                    cpu.key_up(keys[event.key])
+            
+            
