@@ -2,7 +2,6 @@
 This module will handel keyboard logic
 """
 
-from _typeshed import SupportsKeysAndGetItem
 import sys
 import pygame
 
