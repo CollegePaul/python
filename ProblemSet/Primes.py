@@ -1,4 +1,4 @@
-#Find prim numbers below 200
+#Find prime numbers below 200
 upper = 200
 calc = 0
 

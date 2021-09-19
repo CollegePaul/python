@@ -15,4 +15,5 @@ def binomial(p):
     print(str(ncr(p,n)) + "a" + str(p-n) + "b" + str(n))
 
 
-binomial(5)
+binomial(2)
+
