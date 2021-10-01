@@ -12,6 +12,7 @@ n2 = input("Enter 2nd number: ")
 answer = n1 + n2
 print(answer)
 
+
 #this will work as expected but if you enter a letter it will crash
 # n1 = int(input("Enter a number: "))
 # n2 = int(input("Enter 2nd number: "))

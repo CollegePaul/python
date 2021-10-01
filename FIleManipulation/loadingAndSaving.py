@@ -1,4 +1,4 @@
-"""Reading in lines of a text file"""
+"""Reading in lines of a text file, and adding numbers"""
 
 lines = []
 output = []
