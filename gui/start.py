@@ -32,6 +32,7 @@ burgerImg = ImageTk.PhotoImage(file="burger.jpg")
 burgerLable = tk.Label(root, image=burgerImg)
 burgerLable.place(relx=0.6,rely=0.2,relwidth=0.3, relheight=0.6)
 
+
 root.mainloop()
 
 
