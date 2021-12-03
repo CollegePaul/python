@@ -13,13 +13,14 @@ Class Dog {
  +walkies()
 }
 
-Class Bird {
+Class Pig {
  -nest
  +fly()
+ +land()
 }
 
 
 Animal <|-- Dog
-Animal <|-- Bird
+Animal <|-- Pig
 
 @enduml
