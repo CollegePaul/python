@@ -7,9 +7,6 @@ class Person:
         self.name = name #property , class member variable, attruibute, field
         self.age = age   #property , class member variable, attruibute, field
 
-    def getName(self):  #method (procedure, subroutine, function)
-        return self.__name
-
 
 p1 = Person("Paul", 48) #object  - class instance
 print(p1.name)

@@ -11,7 +11,7 @@ class shape(ABC):
         pass
     
 #you cant make an instance of shape as it has abstracts methods
-# myShape = shape("red")
+#myShape = shape("red")
 
 class square(shape):
     def __init__(self, colour):

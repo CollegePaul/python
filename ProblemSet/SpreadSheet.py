@@ -9,3 +9,6 @@ for i in range(len(s)):
   total += ((ord(s[i])-64) * pow(26,len(s)-1-i))
 
 print (total)
+
+
+#DHL = 2924
