@@ -1,0 +1,43 @@
+1 Print "Hello World!" in the console
+
+2 User inputs thier name, name is printed in console
+
+3 user inputs 2 numbers, they are added and printed out
+
+4 a number is entered by the user, if its more than 10
+ print "number is more than 10"
+ if its 10 print ten exactly
+ if less, print less than 10
+
+5 print out the numbers 1 to 10 using a loop
+
+6 print out the numbers 5 to 1 using a loop
+
+7 remove the last letter from a inputed World
+
+8 capitalise a user inputed word
+
+9 check if a word is in a list
+
+10 load a text file and print it out line by line
+
+11 make a function that will square a number and return the anser
+
+12 make a function that will load a filename and return an list of lines
+
+13 make a function that will save the passed line to a passed filename
+
+14 make a tkinter app with a button that changes text when pressed
+
+15 make a tkinter app that loads a file and prints out the lines in a text area
+
+16 load a csv file, and add a number to the fisrt entry of each line
+
+17 programme ohms law
+
+18 
+
+19
+
+20
+
