@@ -29,6 +29,27 @@
 
 14 make a tkinter app with a button that changes text when pressed
 
+15 Make a function that reverses the order of letter of each word in a list.
+ The list order is the same. The function returns a new list.
+
+16 Make a function that returns a list of numbers that corrispond to the length
+of each word in the list
+
+17 Make a function that will count accept a word, then repace each letter with the 
+next letter in the aplphabet
+
+18 Use a try except block to validate an input number is a float. if it is
+output the number with a preceeding '£' symbol.
+
+19 make a function that will will accept a word, the move the letters by a given 
+ specified number, and return the word
+
+20 make a function that uses ohms law v = i*r  voltage = current * resistance
+ and send the function a desired current and volatage. The function returns the 
+ need resistance.  v = volts , r = resistance in ohms, I = current in amps, or miliamps if less than 1 amp.
+ 1 milliamp is 1000th of an amp   eg 0.9 A = 900 aA
+
+
 15 make a tkinter app that loads a file and prints out the lines in a text area
 
 16 load a csv file, and add a number to the fisrt entry of each line
