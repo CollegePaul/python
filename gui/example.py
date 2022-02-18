@@ -4,29 +4,45 @@ from functools import partial
 
 items = []
 counter = 0
-def del_button(n):
-    print(n)
-    bname = (items[n])
+def del_button(button):
+
+    index = items.index(button)
+    bname = (items[index])
     bname.destroy()
-    items.pop(n)
+    items.pop(index)
     buttons_update_positions()
+    print("button count: " + str(len(items)))
 
 def buttons_update_positions():
     global counter
     c = 0
     for i in items:
-        i.place(x = 200, y = c * 30 + 50 )
+        i.place(x = 20, y = c * 31 + 50 )
         c += 1
-    counter = len(items)-1
+    counter -= 1
 
 def addItem():
     global counter
+
+    #add a frame
+    newFrame = tk.Frame(myFrame, background = 'pink')
+    newFrame.place(x=20, y=counter * 31 + 50, width = 350, height=30 )
+
+    #text button
     button_text = l1.get()
-    
-    b = tk.Button(myFrame, text= button_text, command  = partial(del_button, counter))
-    
-    b.place(x = 20, y = counter * 30 + 50)
-    items.append(b)
+    b = tk.Button(newFrame, text= button_text)
+    #b.config(command  = partial(del_button, b ))
+    print(b.cget('text'))
+    b.place(x = 10, y = 0)
+
+    #close button
+    close = tk.Button(newFrame, text= "X")
+    close.config(command  = partial(del_button, newFrame ))
+    close.place(x = 300, y = 0)
+
+
+    print("counter: " + str(counter))
+    items.append(newFrame)
     counter +=1
 
 root = tk.Tk()
@@ -36,7 +52,7 @@ l1 = tk.Entry(root)
 l1.place(x=20,y = 20)
 
 buttonFont = font.Font(family='Comic Sans MS', size=16, weight='bold')
-b1 = tk.Button(root,text="Submit", font = buttonFont,command= addItem)
+b1 = tk.Button(root,text="Add item", font = buttonFont,command= addItem)
 b1.place(x=300, y = 20)
 
 #frame
