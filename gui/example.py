@@ -1,6 +1,5 @@
 import tkinter as tk
 import tkinter.font as font
-from typing import Counter
 from functools import partial
 
 items = []
