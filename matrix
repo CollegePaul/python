@@ -48,3 +48,7 @@ result = matrixmultiplication(m1,m2)
 #loop over the rows in the resulting matrix to print by row
 for row in result:
     print(row)
+
+
+#Original problem source
+#https://www.gla.ac.uk/media/Media_632422_smxx.pdf
