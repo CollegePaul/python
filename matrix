@@ -33,6 +33,8 @@ def matrixmultiplication (A, B):
     return C
 
 #code to test rhe function  2x3   *  3x2 
+#testing a 2x2 * 2x2 is not a good idea, as the rows and cols may be mixed up
+#but because they are the same size you might not know.
 #matrix example and walkthrough is at...
 #https://www.mathsisfun.com/algebra/matrix-multiplying.html
 m1 = [[1,2,3],
