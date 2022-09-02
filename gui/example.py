@@ -160,7 +160,9 @@ l1.place(x=50 ,y = 100)
 l1.bind('<Return>', addItem)
 
 
-b1 = tk.Button(root,text="Add item", font = buttonFont,command= addItem)
+
+#main button
+b1 = tk.Button(root,text="Add item", font = buttonFont,command= addItem, background="green", fg="white")
 b1.place(x=340, y = 90)
 
 #frame
@@ -169,3 +171,5 @@ myFrame.place(x=50, y=150, width = 400, height=400 )
 print(platform.system())
 
 root.mainloop()
+
+
