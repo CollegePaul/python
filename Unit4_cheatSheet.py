@@ -74,7 +74,11 @@ with open("test.txt","r") as f:  #open file in read mode
 print(data)
 #['testing upload, now making a change\n', 'new line of stuff']
 
+<<<<<<< HEAD
 #remove a \n  (ut is best to do this in the step above   line.strip())
+=======
+#remove a \n  (it is best to do this in the step above   line.strip())
+>>>>>>> ecbc9a43ab3f95f421f189a11f1fb222a0b026c0
 cleandata = []
 for line in data:
     cleandata.append( line.rstrip())
