@@ -64,6 +64,8 @@ def orderPizza():
     return [order, round(cost,2)]
 
 
+print(orderPizza())
+
 
 
   

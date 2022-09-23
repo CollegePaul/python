@@ -10,7 +10,7 @@ total_cost = 0   #float - the total order value
 reciept = []     #a list of strings conatining order descriptions
 
 #get customer details before pizza ordering
-name = input("Please enter your name: ")
+name = input("Please enter your name: ") 
 reciept.append("Customer Name: " + name)
 
 address = input("Please enter your adress: ")
