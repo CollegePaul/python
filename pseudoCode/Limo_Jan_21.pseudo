@@ -1,0 +1,49 @@
+//JAN_21 Limo question 3a
+BEGIN
+    //inputs
+    INPUT surname 
+    WHILE surname.length == 0
+        OUTPUT error message
+        INPUT surname
+    END WHILE
+
+    INPUT distance
+    WHILE distance <= 0
+        OUTPUT error message
+        INPUT distance
+    END WHILE
+
+    INPUT passengers  
+    WHILE passengers <1 OR passengers >10
+        OUPUT error message
+        INPUT passengers
+    END WHILE
+
+    //processes
+    passenger_cost = 5 * passengers
+    distance_cost = 2.50 * distance
+
+    IF distance > 20 THEN
+        distance_cost = distance_cost + 30
+    ENDIF
+
+    total = passenger_cost + distance_cost
+
+    //outputs
+    OUTPUT surname
+    OUTPUT passengers
+    OUTPUT distance
+    OUTPUT total
+
+END
+
+
+
+
+
+
+
+
+
+
+
