@@ -17,7 +17,7 @@ class GUI:
         self.button.config(font=("Ariel", 16))
 
         cards = ["card 1", "generic card", "slow card", "ultra card"]
-        self.card_options = OptionMenu(cards,master,self.card_changed,50,50,"GPU:")
+        self.card_options = OptionMenu(cards,master,self.card_changed,50,50,"GPU:") #composition
 
         memory = ["1 gb", "4 gb", "8gb", "16 gb"]
         self.memory_options = OptionMenu(memory,master,self.card_changed,270,50,"Mem:")
