@@ -1,0 +1,39 @@
+
+
+x_input = [[0.1,0.5,0.2],[0.2,0.3,0.1],[0.7,0.4,0.2],[0.1,0.4,0.3]]
+y = [1,0,1,0] #correnct output
+w_weights = [0.4,0.2,0.6]
+threshold = 0.5
+data = []
+
+def step(weighted_sum):
+    if weighted_sum > threshold:
+        return 1
+    else:
+        return 0
+
+def perecptron(x_data,yVal):
+    weighted_sum = 0
+    for x,w in  zip(x_data,w_weights):
+        weighted_sum += x*w
+        
+    print("Weighted Sum: " + str(weighted_sum))
+    data.append([weighted_sum,yVal])
+    return step(weighted_sum)
+
+def cross_entropy(input_data):
+    loss = 0
+    n = len(input_data)
+    for entry in input_data:
+        w_sum = entry[0]
+        #https://www.youtube.com/watch?v=EJRFP3WmS6Q&t=0s    8:06
+
+for i in range(0,len(x_input)):
+    #print(x)
+    perecptron(x_input[i],y[i])
+
+print(data)
+#cross_entropy =(output)
+
+
+
