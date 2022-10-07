@@ -1,6 +1,5 @@
-from colorsys import yiq_to_rgb
+
 import tkinter as tk
-from PIL import ImageTk,Image
 
 
 
@@ -11,7 +10,7 @@ total = 0
 root = tk.Tk()
 root.title("My Carbon calculator")
 root.geometry("400x600")
-#root.iconbitmap('burger.ico')
+
 
 root.resizable(False,False)
 
