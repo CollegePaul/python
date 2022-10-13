@@ -5,3 +5,4 @@ from csvclass import CSVloader
 c = CSVloader("games.csv")
 result = c.loadFile_list()
 print(result)
+
