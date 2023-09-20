@@ -1,0 +1,8 @@
+begin
+    name  =  input "what is your name"
+
+    if name == "Dylan" then
+        print "hi Dylan"
+
+    
+end

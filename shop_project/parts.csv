@@ -1,0 +1,30 @@
+Component,Name,Cost,other
+CPU,i5,£300.00,INTEL
+CPU,i7,£400.00,INTEL
+CPU,i9,£500.00,INTEL
+CPU,Ryzen 5,,AMD
+CPU,Ryzen 7,,AMD
+CPU,Ryzen 9,,AMD
+RAM,8,,
+RAM,16,,
+RAM,32,,
+HDD,128,,
+HDD,256,,
+HDD,512,,
+HDD,1024,,
+GPU,,,
+GPU,,,
+GPU,,,
+GPU,,,
+Motherboard,,,INTEL
+Motherboard,,,INTEL
+Motherboard,,,AMD
+Motherboard,,,AMD
+Case ,70,,
+keyboard,5,,
+mouse,3,,
+windows,99,,
+Monitor,150,,
+,,,
+IT would be best to have a primary key and save this as a flat file csv with a key,,,
+Students could save a system and then load it back in,,,

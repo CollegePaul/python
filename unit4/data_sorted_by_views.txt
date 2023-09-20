@@ -1,0 +1,11 @@
+Game,Platform,Prize Pool,Peek Viewers
+Valorant,PC / Console,$1 023 458,883006
+PUBG Mobile,Mobile,$4 422 220,851780
+Counter-Strike: Global Offensive,PC / Console,$2 805 476,726820
+League of Legends,PC / Console,$1 982 121,720712
+Apex Legends,PC / Console,$1 230 044,542959
+Mobile Legends: Bang Bang,Mobile,$1 378 820,4270270
+Dota 2,PC / Console,$2 137 890,404454
+Arena of Valor,Mobile,$731 703,298787
+Tom Clancy’s Rainbow Six Siege,PC / Console,$3 010 000,231639
+Rocket League,PC / Console,$843 285,168187

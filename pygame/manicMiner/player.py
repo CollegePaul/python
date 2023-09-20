@@ -107,7 +107,7 @@ class Player():
             if self.facing == 0:
                 self.facing = 4
                 
-            else:
+            else:       
                 if self.x > 8:
                     self.x -= 2
            
