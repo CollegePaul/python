@@ -8,6 +8,8 @@ import tracemalloc
 #ideas - use sql to add image to database with a name for a user
 #add mini preview images from database
 #add paint icon
+
+
 tracemalloc.start()
 root = Tk()
 root.title("PS Sprite Editor")
@@ -30,8 +32,6 @@ bin_data =[]
 for rows in range(0,8): #make 8 rows of 8 and set all to zero(white)
     bin_data.append([0,0,0,0,0,0,0,0])
 
-      
-            
 
 
 # save_button = Button(self.root, text = "Save", bd=4, bg='white', command=self.save_pic, width=8, relief=RIDGE)
@@ -47,6 +47,10 @@ canvas.place(x=20,y=20)
 #canvas_small = Canvas(root, bg = 'white', bd=0, height=32, width = 32)
 #canvas_small.place(x=440,y=20)
 
+#make the pixel grid
+grid_data =[]
+
+
 
 
 # draw pixel grid on large canvas
@@ -58,29 +62,43 @@ draw_grid()
 
 def paint(event):
     global pen_colour
-    
+   
     #check if gone out of the canvas while moving
     if event.x > c_width -1:
         return
     if event.y > c_height -1:
         return
     
+    canvas.delete('all')
+    
     #clamp the mouse to the nearest square
     x = int((event.x)/grid_size)        
     y = int((event.y)/grid_size) 
-
     x1 = x * grid_size
     y1 = y * grid_size
 
-    #draw the pixels on the canvas
-    canvas.create_rectangle(x1,y1,x1+grid_size,y1+grid_size, fill=pen_colour, outline="#EEEEEE", width=1)
-    #canvas_small.create_rectangle(x*4,y*4,x*4+4,y*4+4, fill=pen_colour, outline=pen_colour, width=1)
+    global grid_data
+      
 
     #set the pixel in the bin_data
     if pen_colour == "black":
         bin_data[y][x] = 1  
     else:
         bin_data[y][x] = 0
+
+    #draw whole grid
+    for row in range(0,8):
+        for col in range(0,8):
+            if bin_data[row][col] == 1:
+                pen_colour = "black"
+            else:
+                pen_colour = "white"
+            x1 = col * grid_size
+            y1 = row * grid_size
+            pixel = canvas.create_rectangle(x1,y1,x1+grid_size,y1+grid_size, fill=pen_colour, outline="#EEEEEE", width=1)       
+        
+
+
 
     #calculate the row total
     binary_string = ""
@@ -136,18 +154,25 @@ def clear():
 
 clear_button = Button(root, text = "Clear", bg='white', command=clear, width=8, relief=RIDGE)
 clear_button.place(x=20,y=450)
-    
+
+save_text = Text(root, width=25, height=1)
+save_text.place(x = 180, y= 450)
 
 def save_pic():
+    tracemalloc.stop()
+    global save_text
+    filename = save_text.get("1.0",END)
+    
     try:
         #filename = filedialog.asksaveasfilename(defaultextension='.txt')
-
         with open("test.txt", 'a') as f:
             f.truncate(0)
             global data_labels
             
             for row in data_labels:
                 f.write(str(row[1]) + "\n")
+            
+            f.write(filename)
 
 
         #messagebox.showinfo("Image saved as " + "text.txt")
