@@ -47,6 +47,7 @@ function update(data){
     filename = data[8] + ".png"
     var link = document.getElementById('link');
     link.setAttribute('download', filename);
+    link.innerHTML = "Download " + filename;
     link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
     //link.click();
 }
