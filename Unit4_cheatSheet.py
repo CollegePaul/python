@@ -1,42 +1,49 @@
 """
-Paul's Python cheet sheet V1
-please send request for me to add on.
+Paul's Python cheet sheet V1.1
+Updated 14/10/23
 This content is what I think you will need for exam.
 """
 
-
-#a basic input with a presence check
+#a basic input with a presence check ---------------------------------
 name = input("name: ")  #ask for name
 while len(name) == 0:   #if nothing is entered ask again, untill it is
     name = input("name: ")
 
-#validate a input is a number
+#validate a input is a number ----------------------------------------
 while True:
-    money = input("Amount: ")
+    money = input("Amount: ") #input is string data
     try:
         money = float(money)
         break
     except: 
         print("Please input a valid amount")
 
-#a for loop   this will print 0,1,2,3,4
+#a for loop   this will print 0,1,2,3,4 ------------------------------
 for i in range(0,5):
     print(i)
 
-# a list 
+# a list  ------------------------------------------------------------
 colours = ["red","blue", "green"]
 
-#loop over a list
+#loop over a list-----------------------------------------------------
 for c in colours:
     print(c)
 #this prints  "red","blue","green"
 
-#sorting a list
+#sorting a list-------------------------------------------------------
 print(sorted(colours))
 print(sorted(colours, reverse=True))
 
+#a List in a list 2d data---------------------------------------------
+data = [["mario", 3],["Daisy",10],["toad",6]]
 
-#a Dictionary
+#sort 2d data
+def sorter(e):
+    return e[1]   #eg return the index of 1 ["mario", 3]  returns 3
+
+data.sort(key=sorter) #use the sorter function to sort by element
+
+#a Dictionary ---------------------------------------------------------
 sizes = { "small": 1.4,
           "medium": 2.5,
           "large": 3.2}
@@ -56,7 +63,7 @@ for key in sizes:
 if "large" in sizes:
     print("large pizza found")
 
-#rounding
+#rounding  -------------------------------------------------------
 value = 3.14159245
 print(round(value,2)) #3.14
 
@@ -64,7 +71,7 @@ value = 1.3
 print(round(value,2))  #1.3
 print(f"{value:.2f}") #1.30  aways shows 2dp (f string)
 
-#load
+#load  ------------------------------------------------------------
 data = [] #empty list
 with open("test.txt","r") as f:  #open file in read mode
     lines = f.readlines()         #read the lines into list
@@ -74,28 +81,22 @@ with open("test.txt","r") as f:  #open file in read mode
 print(data)
 #['testing upload, now making a change\n', 'new line of stuff']
 
-<<<<<<< HEAD
-#remove a \n  (ut is best to do this in the step above   line.strip())
-=======
 #remove a \n  (it is best to do this in the step above   line.strip())
->>>>>>> ecbc9a43ab3f95f421f189a11f1fb222a0b026c0
 cleandata = []
 for line in data:
     cleandata.append( line.rstrip())
 
 print(cleandata)
-#['testing upload, now making a change', 'new line of stuff']
 
-
-#save
+#save --------------------------------------------------------------------
 with open("saved.txt" , "a") as f:
     f.truncate(0)                       #delete previous content
     for line in cleandata:              #loop over your data
         f.write(line + "\n")            #add the \n for newlines
 
 
-#I don't think you will need csv - but just incase
-#csvs
+
+# working with CSV's -----------------------------------------------------
 csv = "one, two, three, four, five"
 seperate_list = csv.split(",")  #split() - with no "," will split spaces
 print(seperate_list)
@@ -106,7 +107,6 @@ print(seperate_list)
 small, 2
 meduim, 4
 large, 7
-
 """
 import csv     #import the csv module
 loaded_data = []
