@@ -51,5 +51,6 @@ def getXY(x,y,map2d):
 
 print(getXY(1,3,map))
 
+# test
 
 
